@@ -1,0 +1,34 @@
+{% load static %}
+
+{% block styleswitcher %}
+    <!-- Style switcher -->
+    <div id="style-switcher" onclick="toggleSwitcher()">
+        <div>
+            <h3>Select your color</h3>
+            <ul class="pattern">
+                <li>
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('primary')"></a>
+                </li>
+                <li>
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('pink')"></a>
+                </li>
+                <li>
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                </li>
+                <li>
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('green')"></a>
+                </li>
+                <li>
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+                <li>
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('light-blue')"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="javascript: void(0);" class="settings"><i class="ti-settings ti-spin"></i></a>
+        </div>
+    </div>
+    <!-- end Style switcher -->
+{% endblock styleswitcher %}

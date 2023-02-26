@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Globing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" /> 
+    
+    {% block css %}    
+    {% include 'partials/css.html' %}        
+    {% endblock css %}
+
+    {% block extra_css %}            
+    {% endblock extra_css %}
+        
+</head>
+
+<body   
+{% block body_data %}
+    
+{% endblock body_data %}
+    >
+
+{% block navbar %}
+{% endblock navbar %}
+
+{% block home %}
+{% endblock home %}
+
+{% block navbar_option %}
+{% endblock navbar_option %}
+
+{% block services %}
+    {% include 'partials/services.html' %}
+{% endblock services %}
+
+{% block features %}
+    {% include 'partials/features.html' %}
+{% endblock features %}
+
+{% block testimonial %}
+    {% include 'partials/testimonial.html' %}
+{% endblock testimonial %}
+
+{% block team %}
+    {% include 'partials/team.html' %}
+{% endblock team %}
+
+{% block faq %}
+    {% include 'partials/faq.html' %}
+{% endblock faq %}
+
+{% block cta %}
+    {% include 'partials/cta.html' %}
+{% endblock cta %}
+
+{% block pricing %}
+    {% include 'partials/pricing.html' %}
+{% endblock pricing %}
+
+{% block contact %}
+    {% include 'partials/contact.html' %}
+{% endblock contact %}
+
+{% block footer %}
+    {% include 'partials/footer.html' %}
+{% endblock footer %}
+
+{% block backtotop %}
+    {% include 'partials/backtotop.html' %}
+{% endblock backtotop %}
+
+{% block styleswitcher %}
+    {% include 'partials/styleswitcher.html' %}
+{% endblock styleswitcher %}
+
+{% block javascript %}
+    {% include 'partials/javascript.html' %}
+{% endblock javascript %}
+
+{% block extra_javascript %}
+{% endblock extra_javascript %}
+</body>
+
+</html>

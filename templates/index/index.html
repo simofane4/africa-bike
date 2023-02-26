@@ -1,0 +1,18 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/colors/yellow.css' %}" id="color-opt">
+{% endblock extra_css %}
+
+{% block navbar %}
+    {% include 'partials/navbar.html' %}
+{% endblock navbar %}
+
+{% block body_data %}
+    onload="return changeimage()"
+{% endblock body_data %}
+
+{% block home %}
+    {% include 'partials/home.html' %}
+{% endblock home %}
